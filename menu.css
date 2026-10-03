@@ -1,0 +1,181 @@
+.specialites {
+    background-color: #1f1f1f;
+    padding: 60px 40px;
+    border-radius: 15px;
+    border: 2px solid #d3a84c;
+    margin: 80px auto;
+    max-width: 1100px;
+}
+
+
+.specialites-1,
+.specialites-2{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+
+.specialites h2{
+    font-size: 2.5rem;
+    color: goldenrod;
+    font-style:oblique;
+    margin-bottom: 50px;
+    font-family: 'arimo', serif;
+}
+
+.specialites p{
+    font-size: 1.2rem;
+    line-height: 1.8;
+    word-spacing: 1.5px;
+    padding: 10px;
+    text-align: center;
+    width:50%;
+    font-family:'manrope', sans-serif;
+}
+
+.specialites img{
+    width: 45%;
+    max-height: 400px;
+    object-fit:cover;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    filter: brightness(90%);
+}
+
+.specialites img:hover{
+    transform: scale(1.05);
+    filter: brightness(100%);
+}
+
+.menu-semaine {
+    max-width: 900px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.menu-semaine h2 {
+    font-family: 'arimo', serif;
+    font-size: 3rem;
+    color: #d3a84c;
+    margin-bottom: 50px;
+}
+
+.menu-semaine p{
+    font-size: 1.5rem;
+    line-height: 2;
+    margin-bottom: 150px;
+}
+
+
+.menu-jour{
+    background:#1f1f1f;
+    border-radius: 12px 100px / 120px;
+    border:#d3a84c 2px solid;
+    padding: 25px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease, filter 0.4s ease;
+    filter: brightness(85%);
+}
+
+.menu-jour:hover{
+    transform: scale(1.05);
+    filter: brightness(100%);
+    box-shadow: 0 0 25px rgba(211, 168, 76, 0.4);
+}
+
+
+.menu-jour h3{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color:#d3a84c;
+}
+
+.menu-jour p{
+    font-size: 1.5rem;
+    line-height: 2;
+    margin:8px 0;
+}
+
+.menu-jour .ferme{
+    color:#b8b8b8;
+    font-style: italic;
+}
+
+.envoi{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    padding:10px 25px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .specialites-1,
+    .specialites-2{
+        flex-direction: column;
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .specialites img{
+        width: 100%;
+        padding:0 30px;
+    }
+
+    .menu-jour p,
+    .menu-semaine p{
+        font-size: 1.2rem;
+        padding: 10px;
+        text-align: center;
+    }
+
+    h2,
+    h3{
+        text-align: center;
+        margin-right: 0;
+        font-size: 1.5rem;
+    }
+
+    .menu-semaine{
+        font-size: 1.2rem;
+        margin-bottom: 80px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .specialites-1,
+    .specialites-2{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .specialites img{
+        width: 100%;
+        padding:0 20px;
+    }
+
+    .menu-jour p,
+    .menu-semaine p{
+        font-size: 1rem;
+        padding: 10px;
+        text-align: center;
+    }
+
+    h2,
+    h3{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .menu-semaine{
+        font-size: 1rem;
+    }
+}
