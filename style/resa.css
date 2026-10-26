@@ -1,0 +1,109 @@
+form {
+    background: linear-gradient(to bottom right, #1f1f1f, #2a2a2a);
+    border: 2px solid goldenrod;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 40px 50px;
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+form > div{
+    display: grid;
+    gap:15 px;
+}
+
+form label{
+    font-size: 1.5rem;
+    margin-top:10 px;
+    color: aliceblue;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+form input,
+form select{
+    padding: 20px;
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    background: rgba(255,255,255, 0.05);
+    color:goldenrod ;
+    font-size: 1.3rem;
+}
+
+
+.envoi{
+    
+    display: block;
+    margin: 40px auto;
+    font-size: 1.8rem;
+    padding: 20px 40px;
+    border-radius: 40px;
+    border: 2px solid goldenrod;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+h1{
+    text-align: center;
+    margin-top:150px;
+    margin-bottom: 60px;
+    font-size: 3rem;
+}
+
+.info-contact{
+    font-family: 'manrope',sans-serif;
+    text-align: center ;
+    font-size: 2em;
+    margin-top: 10px;
+    color: goldenrod;
+}
+
+@media screen and (max-width: 900px) {
+    form {
+        padding: 25px 20px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    form label {
+        font-size: 1.2rem;
+    }
+
+    form input,
+    form select {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .envoi {
+        font-size: 1.3rem;
+        padding: 12px 25px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-top: 80px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .info-contact {
+        font-size: 1.2em;
+        text-align: center;
+        margin-top: 20px;
+    }
+}

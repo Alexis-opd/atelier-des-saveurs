@@ -1,0 +1,134 @@
+.accueil-photo {
+    background-color: rgb(29, 29, 29);
+    padding: 45px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 12px;
+    margin: 80px;
+    gap: 25px;
+    border: 1px solid #d3a84c;
+}
+
+
+.accueil-photo img{
+    width: 100%;
+    max-height: 800px;
+    object-fit:cover;
+    border-radius: 10px;
+}
+
+.accueil-photo p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 2;
+    word-spacing: 1.5px;
+    padding: 25px;
+    width: 520px;
+}
+
+
+h2 {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-family: 'arimo', serif;
+    font-size: 2.5rem;
+    text-align: right;
+    margin-right: 80px;
+}
+
+
+.envoi{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section h1 {
+    color: #d3a84c;
+}
+
+p{
+    text-align: center;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:1200px){
+    .accueil-photo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        margin: 0 40px;
+    
+    }
+    
+    .accueil-photo img {
+        margin-bottom: 80px;
+        width: 100%;
+    }
+
+    h1,
+    h2{
+        font-size: 1.8rem;
+    }
+
+    
+    p{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width:900px){
+   .accueil-photo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        margin: 0 20px;
+    }
+    
+    .accueil-photo img {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    h1,
+    h2{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .envoi{
+        margin-top:20px;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    .accueil-photo {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        margin: 0 20px;
+    }
+
+    .accueil-photo img {
+        width: 100%;
+        max-height: 400px;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+  
+     .envoi{
+        margin-top:20px;
+     }
+}

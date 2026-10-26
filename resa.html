@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>L'atelier des saveurs</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/resa.css">
+    </head>
+    <body>
+      <header>
+               <img src="photos/logo.png" alt="logo restaurant" class="logo">
+          <div class="header-center">
+               <h1>L'atelier des saveurs</h1>
+             <nav>
+                 <a href="accueil.html">Accueil</a>
+                 <a href="menu.html">Menu</a>
+                 <a href="a-propos.html">A propos</a> 
+                 <a href="resa.html">Réservation</a> 
+                 <a href="galerie-photo.html">Galerie photo</a>
+             </nav>
+          </div>
+     </header>
+     <main>
+        <section>
+          <h1>Vous pouvez réserver dès maintenant:</h1>
+          <form method="get" action="">
+            <label for="Nom">Nom</label>
+            <input type="text" name="Nom" id="Nom">
+            <label for="Prénom">Prénom</label>
+            <input type="text" name="Prénom" id="Prénom">
+            <label for="Nombre-select">Nombre de personnes</label>
+            <select name="Personnes" id="Nombre-select">
+               <option class="option" value="1">1 personne</option>
+               <option value="2">2 personnes</option>
+               <option value="3">3 personnes</option>
+               <option value="4">4 personnes</option>
+               <option value="5">5 personnes</option>
+               <option value="6">6 personnes</option>
+            </select>
+            <label for="resa">Date et Heure</label>
+            <input type="datetime-local" id="resa" name="resa">
+            <label for="phone">Téléphone</label>
+            <input type="phone" id="phone" name="phone">
+          </form>
+           <input class="envoi" type="submit" value="Réserver">
+        </section>
+
+     </main>
+    <footer>
+    <div class="footer-left">
+        <img src="photos/logo.png" alt="logo restaurant" class="logo">
+        <a href="">9 Rue de l'Arbalète, 51100 Reims</a>
+        <a href="">0650899264</a>
+    </div>
+    <div class="footer-hours">
+        <p>Mardi : 12h00 – 14h00 / 19h00 – 22h30</p>
+        <p>Mercredi : 12h00 – 14h00 / 19h00 – 22h30</p>
+        <p>Jeudi : 12h00 – 14h00</p>
+        <p>Vendredi : 12h00 – 14h30 / 19h00 – 23h00</p>
+        <p>Samedi : 12h00 – 14h30 / 19h00 – 23h00</p>
+        <p>Dimanche : Fermé</p>
+    </div>
+    <nav>
+        <a href="https://www.instagram.com/">
+            <img src="photos/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://fr-fr.facebook.com/">
+            <img src="photos/facebook-1.png" alt="Facebook">
+        </a>
+    </nav>
+</footer>
+    </body>
+</html>

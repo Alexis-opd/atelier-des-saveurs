@@ -1,0 +1,145 @@
+h2 {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    font-family: 'arimo', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #d3a84c;
+    margin: 0;
+}
+
+.chef-photo{
+    padding: 45px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 12px;
+    margin: 40px 80px;
+    gap: 40px;
+    object-fit: cover;
+    border-right:2px  solid #d3a84c;
+    border-bottom:2px  solid #d3a84c ;
+    background-color: #1f1f1f;
+}
+
+.chef-photo img{
+    width: 50%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.chef-photo p{
+    font-size: 1.3rem;
+    line-height: 2;
+    padding: 20px;
+    width: 50%;
+    color: white;
+}
+
+.restau-photo{
+    padding: 45px 25px;
+    margin: 25px 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border-right:2px  solid #d3a84c;
+    border-bottom:2px  solid #d3a84c ;
+    background-color: #1f1f1f;
+    gap: 45px;
+}
+
+.restau-photo img{
+    width: 100%;
+    min-height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: 50% 50%;
+    filter: brightness(85%);
+}
+
+.restau-photo p{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 2;   
+    padding: 30px;
+}
+
+.restau-photo ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.2rem;
+    padding: 30px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.restau-photo ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.restau-photo ul li::before {
+    content: "•";
+    color: goldenrod;
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+}
+
+.envoi{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    section h2 {
+        text-align: center;
+        margin-right: 0;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .chef-photo,
+    .restau-photo {
+        flex-direction: column;
+        margin: 20px 15px;
+        padding: 20px 15px;
+    }
+
+    .chef-photo p,
+    .restau-photo p,
+    .restau-photo li {
+        width: 100%;
+        padding: 10px 5px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section h2 {
+        text-align: center;
+        margin-right: 0;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .chef-photo,
+    .restau-photo {
+        flex-direction: column;
+        margin: 20px 15px;
+        padding: 20px 15px;
+    }
+
+    .chef-photo p,
+    .restau-photo p,
+    .restau-photo li {
+        width: 100%;
+        padding: 10px 5px;
+        font-size: 1rem;
+    }
+}
