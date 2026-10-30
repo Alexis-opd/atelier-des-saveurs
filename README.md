@@ -1,3 +1,3 @@
 # atelier-des-saveurs
-**https://alexis-opd.github.io/atelier-des-saveurs/accueil.html**
+**https://atelier-des-saveurs/accueil.html**
 
