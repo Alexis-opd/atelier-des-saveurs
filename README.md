@@ -1,3 +1,3 @@
 # atelier-des-saveurs
-**https://atelier-des-saveurs/accueil.html**
+**https://atelier-des-saveurs/index.html**
 
